@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>accordion</title>
+    <link rel="stylesheet" href="accordion.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="acc">
+    <h1>Items</h1>
+    <ul>
+        <li v-for="item in arrays_3()">{{ item }}</li>
+    </ul>
+
+    <div class="accbox">
+        <label for="label1">more</label>
+        <input type="checkbox" id="label1" class="cssacc" />
+        <div class="accshow">
+            <ul>
+                <li v-for="item in arrays_other()">{{ item }}</li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="accordion.js"></script>
+</body>
+</html>
